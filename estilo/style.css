@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?família=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limão&display=swap');
+
+
+:root{
+    --fonte1: 'Sriracha', cursive;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3: 'Sriracha', cursive;
+    --fonte13:'Lemon', serif;
+    --cor0:  #595959;
+    --cor01: white;
+    --cor02: #262626;
+    --cor03: #A61717;
+    --cor04: #59111E;
+
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: black;
+}
+
+
+
+header{
+    background-image:linear-gradient(to bottom, var(--cor0), var(black) );
+    color: var(--cor0);
+    text-align: center;
+}
+header > h1{
+    font-family: var(--fonte13);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 4em;
+    
+}
+header > p{
+    padding-bottom: 50px;
+}
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+header a:hover, footer a:hover{
+
+    text-decoration: underline;
+    color: var(--cor04);
+}
+
+section{
+    font-family: var(--fonte3);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 1.5em;
+}
+section > p{
+    padding-bottom: 2em;
+}
+section.normal{
+    background-image:linear-gradient(to right, var(--cor01), var(--cor02) );
+    color: black;
+}
+section.imagem {
+    background-color: rgb(#262626);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.501);
+    background-attachment: fixed;
+    
+
+}
+section.imagem > p {
+    width: 400px;
+    background-color: hsla(0, 0%, 0%, 0.313);
+    text-shadow: 1.5px 1.5px 0px black;
+}
+section#img01{
+    background-image: url(../imagens/phone-292994_640.jpg);
+    background-position: right center;
+    background-size: cover;
+
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+
+}
+
+
+footer{
+    background-color: black;
+    color: var(--cor01);
+    text-align: center;
+    padding: 10px;
+}
